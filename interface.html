@@ -37,7 +37,7 @@
             target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
         <a href="method overriding.html"
             target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
-        <a href="interface.html"
+        <a href="interface.html" style="background-color: teal; color: white;"
             target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
         <a href="exception handling.html"
             target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
@@ -68,13 +68,53 @@
     </div><br-->
     <div id="show">
         <center>
-            <br>
-            <br><br><br>
-            <hr>
-            <h2><em>Simplicity and elegance are unpopular because they require hard work and discipline to achieve and
-                    education to be appreciated.</em></h2>
-            <hr>
+            <b>
+                <h1>INTERFACE</h1>
+            </b>
         </center>
+        <h4>PURPOSE OF INTERFACE:</h4>
+        <ul>
+            <li><b>Provides communication − </b>Through the interface you can specify how you want the methods and
+                fields of a particular type.</li>
+            <li><b>Multiple inheritance −</b> Java doesn’t support multiple inheritance, using interfaces you can
+                achieve multiple inheritance</li>
+            <li><b> Abstraction −</b> All the methods of the interface are abstract and the user doesn’t know how a
+                method is
+                written except the method signature/prototype. Using interfaces, you can achieve (complete) abstraction.
+            </li>
+            <li><b>Loose coupling − </b>Coupling refers to the dependency of one object type on another, if two objects
+                are completely independent of each other and the changes done in one doesn’t affect the other both are
+                said to be loosely coupled.You can achieve loose coupling in Java using interface.</li>
+        </ul>
+        <br>
+        <h4>INTERFACE :</h4>
+        <p>An interface in Java is a specification of method prototypes. Whenever you need to guide the programmer or
+            make a contract specifying how the methods and fields of a type should be you can define an interface.</p>
+        <p>To create an object of this type you need to implement this interface, provide a body for all the abstract
+            methods of the interface and obtain the object of the implementing class.</p>
+        <br>
+        <h4>SYNTAX:</h4>
+        <pre>        interface interface_name
+            {  
+                // declare constant fields  
+                // declare methods that abstract   
+                // by default.  
+            }
+            </pre>
+        <br>
+        <h4>EXAMPLE 1:</h4>
+        <img src="images/interface ex1.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this example,the printable interface has only one method,and its implementation
+            is provided in the A6 class.</p>
+        <br>
+        <h4>EXAMPLE 2:</h4>
+        <img src="images/interface ex2.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>Through creating a object to class C ,class A could be inherited and properties of
+            Class B could be inherited through the property of interface.</p>
+        <h6><b>Note:</b>Any number of interfaces could be created but not two classes could be inherited at
+            the same time.</h6>
 
     </div>
 </body>

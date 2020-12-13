@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+
+            <b>
+                <h1>BUILT-IN USER DEFINED AND CHAINED EXCEPTIONS</h1>
+            </b>
+        </center>
+        <h4>Exception:</h4>
+        <p>An exception is an event that disrupts the normal flow of the program.Exception Handling is a mechanism to
+            handle runtime error.Throwable is the base class for Exception ( An exception is a sudden and an unexpected
+            event which leads to the sudden termination of the program during execution of a program (i.e) at the
+            runtime of a program.)
+        </p>
+        <br>
+        <h4>Types of exception:</h4>
+        <ul>
+            <li>Checked Exception</li>
+            <li>Unchecked Exception</li>
+        </ul>
+        <br>
+        <h4>The ways to handle exception:</h4>
+        <img src="" alt="">
+        <br>
+        <h4>Difference between Checked & Unchecked Exception:</h4>
+        <table>
+            <tr>
+                <th>Checked</th>
+                <th>Unchecked</th>
+            </tr>
+            <tr>
+                <td>An exception that is checked by the compiler at compilation-time.</td>
+                <td>An exception that occurs at the time of execution. These are also called as Runtime Exception.</td>
+            </tr>
+            <tr>
+                <td>These exceptions cannot simply be ignored,the programmer should handle these exception.</td>
+                <td>Runtime exceptions are ignored at the time of compilation.</td>
+            </tr>
+            <tr>
+                <td>eg.,FileNotFound Exception,IO Exception,Etc.,</td>
+                <td>eg.,Arithmetic Exception,ArrayIndexOutOfBound Exception ,Etc.,</td>
+            </tr>
+        </table>
+        <br>
+        <h4>Syntax of Exception:</h4>
+        <pre>      class Exception
+            {
+                Public static void main(string args[])
+                {
+                            Try
+                            {
+                                   //code that may raise exceptions
+                            }
+            
+                            catch(Exception e)
+                           {
+                            // rest of the program
+                           }
+                     }
+            }
+            </pre>
+        <br>
+        <p>In this we are going to discuss…..</p>
+        <ul>
+            <li>Built-in Exceptions</li>
+            <li>User defined exceptions</li>
+            <li>Chained exceptions</li>
+        </ul><br>
+        <center>
+            <h4 style="font-size: 30px;">BUILT-IN EXCEPTION</h4>
+        </center>
+        <p> Built-in Exceptions are the exceptions which are available in java libraries.These exceptions are suitable
+            to explain certain error situations.</p>
+        <br>
+        <h4>Examples of Built-in Exception:</h4>
+        <ul>
+            <li>Arithmetic Exception</li>
+            <li> ArrayIndexoutofBound Exception</li>
+            <li> ClassNotFound Exception</li>
+            <li> FileNotFound Exception</li>
+            <li> IO Exception(Input/Output)</li>
+            <li> Interrupted Exception</li>
+            <li> NoSuchMethod Exception</li>
+            <li> NullPointer Exception</li>
+            <li> NumberFormat Exception</li>
+            <li> StringIndexOutOfBound Exception</li>
+        </ul>
+        <br>
+        <h4>Arithmetic Exception:</h4>
+        <p>Arithmetic Exception is thrown when an exceptional condition has occurred in an arithmetic operation</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>ArrayIndexOutOfBounds Exception:</h4>
+        <p>ArrayIndexOutOfBounds Exception is thrown to indicate that an array has been accessed with an illegal index.
+            The index is either negative or greater than or equal to the size of the array.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>NullPointer Exception:</h4>
+        <p> This exception is raised when referring to the members of a null object. Null represents nothing.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>NumberFormat Exception:</h4>
+        <p>This exception is raised when a method could not convert a string into a numeric format.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>ClassCastException:</h4>
+        <p>ClassCastException in java is a run time error that occurs when an object can not be casted to another type.
+        </p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>StringIndexOutOfBounds Exception:</h4>
+        <p>It is thrown by String class methods to indicate that an index is either negative than the size of the
+            string.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>Interrupted Exception:</h4>
+        <p>It is thrown when a thread is waiting, sleeping, or doing some processing, and it is interrupted.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>FileNotFound Exception:</h4>
+        <p>This Exception is raised when a file is not accessible or does not open</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <h4>ClassNotFound Exception:</h4>
+        <p>This Exception is raised when we try to access a class whose definition is not found.</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p></p>
+        <br>
+        <center>
+            <h4 style="font-size: 30px;">USER DEFINIED EXCEPTION</h4>
+        </center>
+        <ul>
+            <li>In java we have already defined, exception classes such as ArithmeticException, NullPointerException
+                etc. These exceptions are already set to trigger on pre-defined conditions such as when you divide a
+                number by zero it triggers ArithmeticException.</li>
+            <li>Followed by that we can create our own exception class in java and throw that exception using throw
+                keyword. These exceptions are known as user-defined or custom exceptions.</li>
+        </ul><br>
+        <h4>throw keyword:</h4>
+        <ul>
+            <li>The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+            </li>
+            <li>We can throw either checked or unchecked exceptions.</li>
+            <li>The throw keyword is mainly used to throw custom exceptions.</li>
+        </ul>
+        <br>
+        <h4>Syntax:</h4>
+        <p>throw new exception_class("error message");</p>
+        <u>
+            <h6>For example:</h6>
+        </u>
+        <p>throw new ArithmeticException("divisible by zero(0)");</p>
+        <br>
+        <h4>A simple example program for user defined exception using throw keyword:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p> In the above example,we need to check whether the student got a pass or fail mark.Inside the try block we
+            getting the input from the user and check the condition. If the condition is false the exception is thrown
+            by the throw keyword to the created exception class by extending the Exception class (catch block).</p>
+        <h6>NOTE:</h6>
+        <ul>
+            <li>User-defined exceptions must extend Exception class.</li>
+            <li>The exception is thrown using the throw keyword.</li>
+        </ul>
+        <br>
+        <h4>Advantage of user defined or custom exception:</h4>
+        <ul>
+            <li>Custom / User defined exceptions provide you the flexibility to add attributes and methods that are not
+                part of a standard Java exception.</li>
+            <li>If you reuse an existing exception, any piece of your code that catches the exception has to deal with
+                the possibility that the actual exception wasn't thrown by your code, but by some other library party
+                code.</li>
+            <li>This tends to make error handling more flakey.</li>
+        </ul>
+        <br>
+        <center>
+            <h4 style="font-size: 30px;">CHAINED EXCEPTION</h4>
+        </center>
+        <p>Chained Exceptions allows you to relate one exception with another exception, i.e one exception describes the
+            cause of another exception.</p>
+        <h4>Constructors Of Throwable class Which support chained exceptions in java :</h4>
+        <ul>
+            <li>Throwable(Throwable cause) - the cause is the current exception.</li>
+            <li>Throwable(String msg, Throwable cause) - msg is the exception message, the cause is the current
+                exception.</li>
+        </ul>
+        <h4>Methods Of Throwable class Which support chained exceptions in java :</h4>
+        <ul>
+            <li><b> getCause() -</b> method returns the actual cause associated with the current exception.</li>
+            <li><b> initCause() (Throwable cause) -</b> set an underlying cause(exception) with invoking exception.</li>
+        </ul>
+        <br>
+        <h4>EXAMPLE 1:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <ul>
+            <li>Here NumberFormatException was thrown but the actual cause of exception was a Nullpointer exception.
+            </li>
+            <li>The method will throw only a NumberFormatException to the user. So the user would not come to know about
+                the actual cause of exception(Nullpointer exception).</li>
+        </ul>
+        <br>
+        <h4>EXAMPLE 2:</h4>
+        <p>( By using initCause(Throwable cause) in try block and getcause() in catch block we are able to display the
+            actual error occurred in it to the user)</p>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <ul>
+            <li>Here NumberFormatException was thrown but the actual cause of exception was a NullPointerException.</li>
+            <li>The method will throw only a NumberFormatException to the user. So that by using initCause(Throwable
+                cause) in try block and getcause() in catch block ) users would come to know about the actual cause of
+                exception(NullPointerException) by displaying it .</li>
+        </ul>
+        <u><h6>NOTE:</h6></u>
+        <p>If you didn’t give  initCause(Throwable cause)  in try block , the above program will give the output like this...</p>
+        <img src="" alt="">
+        <br>
+
+
+    </div>
+</body>
+
+</html>

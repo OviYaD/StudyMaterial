@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+            <h1>THROW KEYWORD</h1>
+        </center>
+        <h4>Definition:</h4>
+        <p>The Java throw keyword is used to explicitly throw an exception. We can throw either checked or unchecked
+            exceptions in java by throw keyword. The throw keyword is mainly used to throw custom exceptions.</p>
+        <br>
+        <h4>Syntax:</h4>
+        <pre>throw exception</pre>
+        <br>
+        <h4>Need for throw keyword:</h4>
+        <p>The throw keyword throws custom error and stops execution of remaining statements in the block.</p>
+        <br>
+        <h4>Working of throw keyword:</h4>
+        <p>The flow of execution of the program stops immediately after the throw statement is executed and the nearest
+            enclosing try block is checked to see if it has a catch statement that matches the type of exception. If it
+            finds a match, control is transferred to that statement otherwise the next enclosing try block is checked
+            and so on. If no matching catch is found then the default exception handler will halt the program.</p>
+        <br>
+        <h4>Examples:</h4>
+        <u>
+            <p>1.Throw keyword without handling exception:</p>
+        </u>
+        <img src="images/throw ex1.jpeg" width="800px ">
+        <h6>Explanation:</h6>
+        <p>Exception is thrown explicitly using the throw keyword. There is no try-catch block to handle exceptions. So
+            error occurs.</p>
+        <br>
+        <u>
+            <p>2.Throw keyword with handling exception:</p>
+        </u>
+        <img src="images/throw ex2.jpeg" width="800px ">
+        <h6>Explanation:</h6>
+        <p>Exception is thrown explicitly using the throw keyword. There is a catch block to handle exceptions. So the
+            program runs smoothly without interruption. Remaining statements are executed.</p>
+        <br>
+        <h4>Important points to remember:</h4>
+        <ul>
+            <li>The throw keyword must be followed by an instance of Throwable class or one of its subclasses.</li>
+            <li>When using the throw keyword to throw a checked exception from within a method, the method must either:
+                <ul style="list-style-type: square;">
+                    <li>Declares the throws clause followed by the exceptions thrown by the throw statements, or:</li>
+                    <li>Catch the exceptions thrown by the throw statements.</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <h4>Difference between throw and throws keyword:</h4>
+        <table>
+            <tr>
+                <th> S.No</th>
+                <th> Keys </th>
+                <th> throws</th>
+                <th> throw</th>
+            </tr>
+            <tr>
+                <td>
+                    d
+                </td>
+                <td>Definition</td>
+                <td>Throws is a keyword used in the method signature used to declare an exception which might get thrown
+                    by the function while executing the code.</td>
+                <td> Throw is a keyword which is used to throw an exception explicitly in the program inside a function
+                    or inside a block of code.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Internal implementation</td>
+                <td>we can declare multiple exceptions with throws keyword that could get thrown by the function where
+                    throws keyword is used.</td>
+                <td>Internally, throw is implemented as it is allowed to throw only a single exception at a time i.e we
+                    cannot throw multiple exceptions with a throw keyword.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Type of exception</td>
+                <td>Using throws keyword both checked and unchecked exceptions can be declared and for the propagation
+                    checked exception must use throws keyword followed by specific exception class name.</td>
+                <td>With throw keyword we can propagate only unchecked exceptions i.e checked exceptions cannot be
+                    propagated using throw.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Syntax</td>
+                <td>throws keyword is followed by exception class names.</td>
+                <td>throw keyword is followed by the instance variable.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Declaration</td>
+                <td>throws keyword is used with the method signature.</td>
+                <td>In order to use the throw keyword we should know that throw keyword is used within the method.</td>
+            </tr>
+        </table><br>
+    </div>
+</body>
+
+</html>

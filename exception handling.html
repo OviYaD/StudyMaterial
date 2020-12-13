@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+            <b>
+                <h1>Exceptional handling, Multiple catch, Nested try</h1>
+            </b>
+        </center>
+        <h4>
+            <center>
+                <h4 style="font-size: 30px;">EXCEPTION HANDLING</h4>
+            </center>
+        </h4>
+        <h4>What is an Exception?</h4>
+        <p>An exception is an unwanted or unexpected event, which occurs during the execution of
+            a program i.e at run time, that disrupts the normal flow of the program’s instructions.</p>
+        <br>
+        <h4>Error vs Exception</h4>
+        <p><b>Error:</b> An Error indicates a serious problem that a reasonable application should not try
+            to catch. </p>
+        <p><b>Exception:</b> Exception indicates conditions that a reasonable application might try to
+            catch. </p>
+        <br>
+        <p>All exception and error types are subclasses of class Throwable , which is the base class
+            of hierarchy.One branch is headed by Exception . This class is used for exceptional
+            conditions that user programs should catch. NullPointerException is an example of
+            such an exception.Another branch, Error is used by the Java run-time system( JVM ) to
+            indicate errors having to do with the run-time environment itself(JRE).
+            StackOverflowError is an example of such an error</p>
+        <br>
+        <img src="" alt="">
+        <img src="" alt="">
+        <br>
+        <h4>Difference between Checked and Unchecked
+            Exceptions:</h4>
+        <h6>1) Checked Exception:</h6>
+        <p>The classes which directly inherit Throwable class except RuntimeException
+            and Error are known as checked exceptions e.g. IOException, SQLException
+            etc. Checked exceptions are checked at compile-time.</p>
+        <h6>2) Unchecked Exception:</h6>
+        <p>The classes which inherit RuntimeException are known as unchecked
+            exceptions e.g. ArithmeticException, NullPointerException,
+            ArrayIndexOutOfBoundsException etc. Unchecked exceptions are not
+            checked at compile-time, but they are checked at runtime .</p>
+        <h6>3) Error:</h6>
+        <p>Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError,
+            AssertionError etc.</p>
+        <br>
+        <h4>Advantage of Exception Handling</h4>
+        <p>The core advantage of exception handling is to maintain the normal flow
+            of the application . An exception normally disrupts the normal flow of the
+            application that is why we use exception handling.</p>
+        <p>statement 1;</p>
+        <p>statement 2;</p>
+        <p>statement 3; //exception occurs</p>
+        <p>statement 4;</p>
+        <p>statement 5;</p>
+        <p>Suppose there are 5 statements in your program and there occurs an
+            exception at statement 3, the rest of the code will not be executed i.e.
+            statement 4 to 5 will not be executed. If we perform exception handling, the
+            rest of the statement will be executed. That is why we use exception
+            handling in Java </p>
+        <br>
+        <h4>
+            <center>
+                <h4 style="font-size: 30px;">MULTIPLE CATCH BLOCK</h4>
+            </center>
+        </h4>
+        <h4>Java Multi-catch block:</h4>
+        <p>A try block can be followed by one or more catch blocks. Each catch block
+            must contain a different exception handler. So, if you have to perform
+            different tasks at the occurrence of different exceptions, use the java
+            multi-catch block.</p>
+        <br>
+        <h4>Points to remember:</h4>
+        <ul>
+            <li>At a time only one exception occurs and at a time only one catch block
+                is executed.</li>
+            <li>All catch blocks must be ordered from most specific to most general,
+                i.e. catch for ArithmeticException must come before catch for
+                Exception.</li>
+        </ul>
+        <br>
+        <h4>EXAMPLE 1:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p>In the above example,in try block we generate ArithmeticException,the
+            corresponding
+            arithmetic exception catch block is invoked.</p>
+        <br>
+        <h4>EXAMPLE 2:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p>In the above example,in the try block we generate an ArrayOutOfBound
+            exception,the corresponding exception catch block is invoked.
+        </p>
+        <br>
+        <h4>EXAMPLE 3:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p>In the above example, we generate NullPointerException, but didn't provide
+            the corresponding exception type. In such a case, the catch block containing
+            the parent exception class Exception will be invoked.</p>
+        <br>
+        <h4>EXAMPLE 4:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p>In the above example, the try block contains two exceptions. But at a time
+            only one exception occurs and its corresponding catch block is invoked.</p>
+        <br>
+        <h4>EXAMPLE 5:</h4>
+        <img src="" alt="">
+        <h6>EXPLANATION:</h6>
+        <p>In the above example, to handle the exception without maintaining the order
+            of exceptions (i.e. from most specific to most general)</p>
+        <br>
+        <h4>
+            <center>
+                <h4 style="font-size: 30px;">NESTED TRY BLOCK</h4>
+            </center>
+        </h4>
+        <p>The try block within a try block is known as a nested try block in java.</p>
+        <h4>Why use nested try block:</h4>
+        <p>Sometimes a situation may arise where a part of a block may cause one
+            error and the entire block itself may cause another error. In such cases,
+            exception handlers have to be nested.</p>
+        <br>
+        <h4>SYNTAX:</h4>
+        <pre>          try
+                {
+                   statement 1;
+                   statement 2;
+                   try
+                   { 
+                       statement 1;
+                       statement 2;
+                   } 
+                  catch(Exception e)
+                   { 
+                       
+                   }
+                }
+                catch(Exception e)
+                {
+                } 
+            </pre>
+        <br>
+        <h4>EXAMPLE:</h4>
+        <img src="" alt="">
+
+
+
+
+    </div>
+</body>
+
+</html>

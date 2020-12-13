@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>
         OOPS| Study Material
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
         <center>
             <h1>OOPS Study Material</h1>
@@ -23,7 +24,7 @@
         <h3><b>MENU</b></h3>
         <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
         <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
-        <a href="method overloading.html"
+        <a href="method overloading.html" style="background-color: teal; color: white;"
             target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
         <a href="inheritance.html"
             target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
@@ -66,17 +67,80 @@
         <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
         <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
     </div><br-->
-    <div id="show">
+    <div id="show" class="w3-rest w3-container w3-white">
+
         <center>
-            <br>
-            <br><br><br>
-            <hr>
-            <h2><em>Simplicity and elegance are unpopular because they require hard work and discipline to achieve and
-                    education to be appreciated.</em></h2>
-            <hr>
-        </center>
+            <b>
+                <h1>METHOD OVERLOADING </h1>
+            </b>
+        </center><br>
+
+
+        <p>Method Overloading is a feature that allows a class to have more than one method having the same name, if
+            their argument lists are different.
+        </p>
+        <h4>NEED OF METHOD OVERLOADING :</h4>
+
+        <p> Overloading in java is the ability to create multiple methods of the same name, but with different
+            parameters.
+            The main advantage of this is cleanliness of code.
+            This means that if we have any type of variable, we can get a String representation of it by using String.
+            valueOf(variable)
+        </p>
+        <ul style="list-style-type:square;">
+            <li>Method overloading is achieved by either:
+            </li>
+        </ul>
+        <p>-changing the number of arguments.
+        </p>
+        <p>-changing the datatype of arguments.</p>
+        <p>-Function name should be the same.</p>
+        <p>-Checking the return type.</p>
+        <h4>METHOD OVERLOADING IN JAVA:</h4>
+
+        <ul>
+            <li>Same Class</li>
+        </ul>
+        <p>-Method(x)</p>
+        <p>-Method(x,y)</p>
+        <p>-Method(x,y,z)</p>
+        <h4>SYNTAX:</h4>
+
+        <pre>
+            <p>
+            void func() { ... }
+            void func(int a) { ... }
+            float func(double a) { ... }
+            float func(int a, float b) { ... }   
+        </p>         
+        </pre>
+        <h4>SIMPLE EXAMPLE:</h4>
+        <img src="images/methodoversimpleex.png" width="100%">
+        <br>
+        <h4>METHODS OF OVERLOADING : </h4>
+        <h6>1.Overloading by changing no of arguments</h6>
+        <img src="images/no of arg.png" width="100%">
+        <br>
+        <br>
+        <h6>2.Overloading by changing datatype of parameters
+        </h6>
+        <img src="images/changing datatype.png" width="100%">
+        <h4>EXAMPLE FOR PRACTICE:</h4>
+        <h5>1.Java program to find the sum of two integer number and two float numbers by getting
+            inputs from the user using method overloading.
+        </h5>
+        <img src="images/methodoverloadingadd.png" width="100%">
+        <br><br>
+        <h5>2.Program to find the power of a number.Use method overloading.
+            First method have two integer argument and second method have one integer argument and one double argument.
+        </h5>
+        <img src="images/MOpower.png" width="100%">
+        <br><br>
 
     </div>
+
+
+
 </body>
 
 </html>

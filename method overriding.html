@@ -1,0 +1,284 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+            <b>
+                <h1>METHOD OVERRIDING</h1>
+            </b>
+        </center>
+        <h4>NEED:</h4>
+        <p>In inheritance, the parent class and child class may sometimes have same name for data
+            member and member function. The member function has same number of arguments, same
+            data type.In this scenario, the derived class object may not able to access the content of base
+            class. In order to overcome these drawbacks, a super keyword is used.
+        </p>
+        <br>
+        <h4>DEFINITION:</h4>
+        <p>If Derived class has the same method or same data members as in base class,it is known
+            as method overriding.This is nearly the same as method overloading,main difference is that
+            overriding occurs at the runtime,overloading occurs at compile time</p>
+        <br>
+        <h4>DIFFERENCE BETWEEN METHOD OVERLOADING AND OVERRIDING:</h4>
+        <table>
+            <tr>
+                <th>METHOD OVERLOADING</th>
+                <th>METHOD OVERRIDING</th>
+            </tr>
+            <tr>
+                <td>It occurs within the same class.</td>
+                <td>It occurs between two classes. Ie.,base and
+                    derived class.
+                </td>
+            </tr>
+            <tr>
+                <td>Inheritance is not involved. </td>
+                <td>Inheritance is involved.
+                </td>
+            </tr>
+            <tr>
+                <td>One method does not hide another . </td>
+                <td>Derived class method hides the base class
+                    method.
+                </td>
+            </tr>
+            <tr>
+                <td>One method does not hide another . </td>
+                <td>Derived class method hides the base class
+                    method.
+                </td>
+            </tr>
+            <tr>
+                <td>Parameters must be different. </td>
+                <td>Parameters must be the same.
+                </td>
+            </tr>
+            <tr>
+                <td>Return type may or maynot be the same. </td>
+                <td>Return type must be the same.
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h4>OCCURRENCE:</h4>
+        <ul>
+            <li><b>Occurs at data members-</b> Overriding occurs when the data members in Derived class
+                is the same as in base class.
+            </li>
+            <li><b>Occurs at member function-</b>Overriding occurs when the member function in Derived
+                class is the same as in base class.
+            </li>
+        </ul>
+        <br>
+        <h4>SYNTAX:</h4>
+        <pre>     class Base
+            {
+                int data;               //Overridden method
+                void display()
+                {
+                ……..
+                }
+            }
+            class Derived extends Base
+            {
+                //Overriding method
+                int data;          // same data member
+                void display()       // same member function
+                {
+                …...
+                }
+            }
+        </pre>
+        <p><b>NOTE:</b>: In this derived class has the same data member and same member function as in base
+            class. So,it is called method overriding.</p>
+        <br>
+        <h4>EXAMPLE:</h4>
+        <h6>1.Method overriding at datamember:</h6>
+        <img src="images/method overriding ex1.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>A base and derived class with the same data member a with data type called double are created.
+            In main class ,create an object for derived class and call the display() method,the pointer goes to derived
+            class and search for display() method in that current class.In that, print the a and a1 values, it prints
+            Derived class float a value and base class int a1 value as the output.
+            Because, a is present in both the classes and a1 is in parent class. The priority is to print the current
+            invoked class data. <br> <b>Note:</b> Here, Derived class takes the same data member double a as the base
+            class.
+            Note that,in base class there are two data member a( one of integer data type and another with the double
+            data type). Overriding takes at the same data member with the same datatype.
+        </p><br>
+        <h6>2.Method overriding at member function:</h6>
+        <img src="images/method overriding ex2.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>A base and derived class with the same member function display() with same return type are created. In the
+            main class , When an object for the derived class is created and calls the display() method,it goes to the
+            derived class method and prints the Child class,since the object points to the derived class.
+            <br><b>Note:</b>
+            Here member function in both Derived and base is the same . </p>
+        <br>
+        <p>In these two cases ,by using Derived class object we cannot be able to call the base class method.</p>
+        <p>To overcome this, there are two methods:
+        </p>
+        <ul>
+            <li>Using super keyword.</li>
+            <li>Using dynamic method dispatch. </li>
+        </ul>
+        <br>
+        <h4>SUPER KEYWORD:</h4>
+        <ul>
+            <li>Super is the keyword, it is used for calling the parent class method or constructor.</li>
+            <li>In this, we can use super keyword in two places:
+                <ul style="list-style-type:square ;">
+                    <li>Calling the data member and method- super. Used to call the data members and method of base
+                        class.</li>
+                    <li>Calling constructor-super() Used to call the constructor of base class </li>
+                </ul>
+            </li>
+            <li>If in multiple and multilevel inheritance super keyword invokes the immediate current base class.</li>
+        </ul>
+        <br>
+        <h4> CONSTRAINS:</h4>
+        <ul>
+            <li>Super can be used to refer to immediate parent class instance variables.</li>
+            <li>Super can be used to invoke immediate parent class methods.</li>
+            <li>Super with parameter parenthesis is used to invoke immediate parent class constructor.</li>
+        </ul>
+        <br>
+        <h4>1.SUPER TO CALL BASE CLASS METHOD:</h4>
+        <img src="images/method overriding ex3.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <img src="images/MO EXPLANATION1.jpeg" width="30%"><br>
+        <br>
+        <h4>2.ACCESS BASECLASS ATTRIBUTE:</h4>
+        <img src="images/method overriding ex4.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>A parent and child class with the same data members a and string as its datatype is created . In main, create
+            an object for the derived class and make a call to the printMessage() method. It invokes the derived class
+            method. In that, print the value of the datamember a of derived class and also the parent class datamember a
+            by using the super. keyword.</p>
+        <br>
+        <h4>3.USE OF SUPER TO ACCESS BASE CLASS CONSTRUCTOR:</h4>
+        <img src="images/method overriding ex5.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <img src="images/MO EXPLANATION2.jpeg" width="30%"><br>
+        <br>
+        <h4>4.CALL PARAMETERIZED CONSTRUCTOR USING SUPER:</h4>
+        <img src="images/method overriding ex6.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <img src="images/MO EXPLANATION3.jpeg" width="30%"><br>
+        <br>
+        <h4>DYNAMIC METHOD DISPATCH:</h4>
+        <ul>
+            <li>Runtime polymorphism.</li>
+            <li>The process of calling the base class method is resolved at runtime is known as dynamic method dispatch.
+            </li>
+            <li>In other words,when the base class reference variable points to the derived class during method call the
+                derived class method is executed,this call is determined by the type of object at runtime.</li>
+            <li>This method also is for calling the data members and member functions of both parent and child classes
+                using reference variables.</li>
+        </ul>
+        <br>
+        <h4>EXAMPLE:</h4>
+        <img src="images/method overriding ex7.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>here base and derived class are created.in main, an object for both base class and for derived class are
+            created, calling its method and accessing the base datamember using the base object within the main.In this
+            dynamic method dispatch takes place at,when the reference object for base class is created and make it to
+            points to the derived class,and make a call for the derived class method and accessing its data members.</p>
+        <br>
+        <h4>REAL-TIME PROGRAMS:</h4>
+        <h6>How to use method overriding in Inheritance for subclasses ?Write a java program to find the area of the
+            rectangle using method overriding. Also, identify the two approaches for accessing the base class contents.
+        </h6>
+        <h6>Solution:</h6>
+        <p>This example demonstrates the way of method overriding by subclasses with different number and type of
+            parameters.</p>
+        <img src="images/method overriding ex8.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p><b> Parent class: </b>A parameter constructor and area() with double as its return type created in parent
+            class name
+            Figure. <br>
+            <b> Child class:</b>A parameter constructor and area() same as parent class with double as its return type
+            is
+            created in child class named Rectangle. <br>
+            Note that, in this example we used both super and dynamic method dispatch methods to implement method
+            overriding. <br>
+            In main,we created the object for the both parent and child classes,and passed an arguments.while creating
+            an object for child class,since it is a constructor,passed arguments should
+            be assigned to the base class while creating the object itself. Call to the parameterized constructor using
+            super() keyword. <br>
+            Thus we assign the values to the data members of the base class using super keyword.
+            Then in main we have created a parent class reference variable . Then we made it to point to the base class
+            and derived class,thus base class and derived class method can be accessed through it respectively.That
+            is,parent class object f is assigned to reference object figref,and we make a call figref.area(), it returns
+            the value from the parent class.While,child class object r is assigned to reference object figref,and we
+            make a call figref.area(), it returns the value from the child class.</p>
+        <br>
+    </div>
+</body>
+
+</html>

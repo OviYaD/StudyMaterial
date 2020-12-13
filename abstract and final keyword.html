@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>
         OOPS| Study Material
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
         <center>
             <h1>OOPS Study Material</h1>
@@ -31,7 +32,7 @@
             target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
         <a href="this keyword.html"
             target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
-        <a href="abstract and final keyword.html"
+        <a href="abstract and final keyword.html" style="background-color: teal; color: white;"
             target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
         <a href="packages.html"
             target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
@@ -66,16 +67,85 @@
         <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
         <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
     </div><br-->
-    <div id="show">
+    <div id="show" class="w3-rest w3-container w3-white">
+
         <center>
-            <br>
-            <br><br><br>
-            <hr>
-            <h2><em>Simplicity and elegance are unpopular because they require hard work and discipline to achieve and
-                    education to be appreciated.</em></h2>
-            <hr>
+            <b>
+                <h1> ABSTRACT CLASS AND FINAL KEYWORD</h1>
+            </b>
+        </center><br>
+        <center>
+            <b>
+                <h4 style="font-size: 30px;">ABSTRACT CLASS</h4>
+            </b>
+        </center><br>
+
+        <h4>DEFINITION: </h4>
+
+        <ul>
+            <li>A class which is declared with the abstract keyword is known as an abstract class in
+                Java. It can have abstract and non-abstract methods (method with the body).</li>
+            <li>Abstraction is a process of hiding the implementation details and showing only
+                functionality to the user.</li>
+        </ul><br>
+        <h4>RULES: </h4>
+        <ul>
+            <li>An abstract class must be declared with an abstract keyword.
+            </li>
+            <li>It can have abstract and non-abstract methods.</li>
+            <li>It cannot be instantiated</li>
+            <li>It can have constructors and static methods also.</li>
+            <li>It can have final methods which will force the subclass not to change the body of the
+                method.</li>
+        </ul><br>
+        <h4>EXAMPLE PROGRAM:</h4>
+        <img src="images/abstract ex1.jpeg" width="100%"><br>
+        <h4>REAL-TIME EXAMPLE:</h4>
+        <img src="images/abstract ex2.jpeg" width="100%"><br>
+        <h4>Abstract class having constructor, data member and methods:</h4>
+        <img src="images/abstract ex3.jpeg" width="100%"><br><br><br>
+
+        <center>
+            <b>
+                <h4 style="font-size: 30px;">FINAL KEYWORD</h4>
+            </b>
         </center>
 
+        <h4>DEFINITION: </h4>
+
+        <ul>
+            <li>The final keyword is final that is we cannot change.</li>
+            <li>We can use final keywords for variables, methods, and class.</li>
+            <li>If we use the final keyword for the inheritance that is if we declare any method with the
+                final keyword in the base class so the implementation of the final method will be the
+                same as in derived class.</li>
+                <li>We can declare the final method in any subclass for which we want that if any other
+                    class extends this subclass.</li>
+        </ul><br>
+        <h4>USE OF FINAL KEYWORD: </h4>
+        <P>The final keyword in java is used to restrict the user. The java final keyword can be used in
+            many context. Final can be:</P>
+        <ul>
+            <li>variable
+            </li>
+            <li>method</li>
+            <li>class</li>
+        </ul><br>
+        <h4>FINAL KEYWORD USED AS:</h4>
+        <H5>1) Java final variable</H5>
+        <p>If you make any variable as final, you cannot change the value of final variable(It
+            will be constant).</p>
+        <img src="images/final ex1.jpeg" width="100%"><br>
+        <H5>2) Java final method  </H5>
+        <p>If you make any method as final, you cannot override it</p>
+        <img src="images/final ex2.jpeg" width="100%"><br>
+        <H5>3) Java final class</H5>
+        <p>If you make any class as final, you cannot extend it</p>
+        <img src="images/final ex3.jpeg" width="100%"><br>
+        <h4>INHERITANCE OF FINAL :</h4>
+        <img src="images/final ex4.jpeg" width="100%"><br>
+        <h4>The real scenario of Abstract class:</h4>
+        <img src="images/final ex5.jpeg" width="100%"><br>
     </div>
 </body>
 

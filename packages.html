@@ -1,0 +1,452 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+            <h1>PACKAGES</h1>
+        </center>
+        <h4>NEED:</h4>
+        <p>Packages are used in java in order to prevent naming conflicts , to control access , to make
+            searching/locating and usage of classes , interfaces,enumerations and annotations easier</p>
+        <p>In short, We use packages to avoid name conflicts, and to write a better maintainable
+            code.</p>
+        <br>
+        <h4>DEFINITION:</h4>
+        <p>The package in java is used to group the related classes. Think of it as a folder in a file
+            directory</p>
+        <br>
+        <h4>NOTE:</h4>
+        <p>If you don't use a package statement in your program ,your type ends up in an unnamed
+            packages.Generally speaking,an unnamed package is only for small (or) temporary
+            applications.</p>
+        <br>
+        <h4>TYPES:</h4>
+        <ul>
+            <li>Built-in Package-the java API is a library of prewritten classes, that are free to use,
+                included in the java development environment.</li>
+            <li> User defined package-a packages which are created by the programmer(user)
+                We can add more classes to a created package by using package name at the top of
+                the program and saving it in the package directory. We need a new java file to define a
+                public class, otherwise we can add the new class to an existing .java file and recompile
+                it.
+            </li>
+        </ul>
+        <pre>import java.util.*;</pre>
+        <p><strong> util </strong>is a subpackage created inside <strong>java</strong> package</p>
+        <fieldset>
+            <legend>NOTE:</legend>
+            <p>API-Application Programming Interface is
+                a document which gives you the list of all the
+                packages,classes, and interface ,along with
+                their fields and methods.</p>
+        </fieldset><br>
+        <h4>ADVANTAGES:</h4>
+        <ul>
+            <li>The Java package is used to categorize the classes and interfaces so that they can be
+                easily maintained.</li>
+            <li>Java package provides access protection.</li>
+            <li>Java package removes naming collision.</li>
+            <li>Packages provide reusability of code .</li>
+            <li>To bundle classes and interfaces.</li>
+            <li>We can create our own Package or extend the already available Package.</li>
+        </ul>
+        <br>
+        <h4>DISADVANTAGES:</h4>
+        <ul>
+            <li>We cannot pass parameters to packages.</li>
+            <li> Change in a function needs to be reflected in all the functions that use the changed
+                function and hence the whole package needs to be recompiled.</li>
+        </ul>
+        <br>
+        <h4>CONSTRAINS:</h4>
+        <ul>
+            <li>Package statement must be the first statement in the program even before the import
+                statement.
+            </li>
+            <li>A package is always defined as a separate folder having the name as the package
+                name.
+            </li>
+            <li>Store all the classes in that package folder</li>
+            <li>All classes of the package which we wish to access outside the package must be
+                declared public.</li>
+            <li>All classes within the package must have the package statement as its first line.</li>
+            <li>All classes of the package must be compiled before use.</li>
+        </ul>
+        <br>
+        <h4>IMPORT KEYWORD: </h4>
+        <p>import keyword is used to “access” other package members from this package class. Actually, it
+            does not import other members into the package,instead it shows the path of the other package
+            members to the compiler and JVM.
+        </p>
+        <h4>PACKAGE KEYWORD:</h4>
+        <p>Package is a Java keyword. It declares a 'namespace' for the Java class. It must be
+            put at the top of the Java file, it should be the first Java statement line.Ensure that the package
+            name will be unique.
+        </p>
+        <h4>SYNTAX: </h4>
+        <p>To create the package:</p><br>
+        <pre>              package packagename;
+                    public class classname
+                    {
+                    …...Data members;
+                    /
+                    public void method() {
+                    ……….content ;
+                    }
+                    }
+                    </pre>
+        <p>To import:</p><br>
+        <pre>                  import package name.class;      // import a single class
+                        import package name.*;          // import the whole package
+                        class Main
+                        {
+                        public static void main(String args[])
+                        {
+                        class obj=new class();         //creating an object for the package class
+                        obj.method();                //calling the method in this package present inside the class
+                        }
+                        }
+                        
+                        </pre><br>
+        <h4>How PACKAGE works?</h4>
+        <p>Package names and directory structure are closely related. For example if a package
+            name is college.cse.staff, then there are three directories, college, staff and cse such that staff
+            is present in cse and cse is present college. Also, the directory college is accessible through the
+            CLASSPATH variable, i.e., the path of the parent directory of college is present in CLASSPATH.
+            The idea is to make sure that classes are easy to locate.</p>
+        <br>
+        <h4>Package naming conventions: </h4>
+        <p>Packages are named in reverse order of domain name:</p>
+        <table>
+            <tr>
+                <th>DOMAIN NAME </th>
+                <th>PACKAGE NAME PREFIX</th>
+            </tr>
+            <tr>
+                <td>hyphenated_name.example.org</td>
+                <td>org.example.hyphenated_name</td>
+            </tr>
+            <tr>
+                <td>example.int</td>
+                <td>int_.example</td>
+            </tr>
+            <tr>
+                <td>123name.example.com</td>
+                <td>com.example._123name</td>
+            </tr>
+        </table>
+        <br>
+        <h4>NOTE:</h4>
+        <p>Sequence of the program must be:</p>
+        <ul>
+            <li> Package</li>
+            <li>Import</li>
+            <li>Class</li>
+        </ul><br>
+        <h4>BUILT-IN PACKAGES:</h4>
+        <p>A well-known built-in package is Scanner which is used to get user input. Here
+            Scanner is not a package, it is the class of the particular package called java.util. Some
+            examples are,
+        </p>
+        <center>
+            <img src="images/built-in-package.png" width="500px 500px">
+        </center><br>
+        <h4>EXAMPLE:</h4>
+        <img src="images/package ex1.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In the example above, java.util is a package, while
+            Scanner is a class of the java.util package.To use the
+            Scanner class, create an object of the class and use any
+            of the available methods found in the Scanner class
+            documentation. In our example, we will use the
+            nextLine() method, which is used to read a complete
+            line.
+        </p><br>
+        <h4>USER-DEFINED PACKAGE:</h4>
+        <p>To create our own package,we need to understand that Java uses a file system
+            directory to store them. Just like folders on the computer.</p>
+        <h4>EXAMPLE:</h4>
+        <h6>1.Single package with one method and import into the main:</h6>
+        <img src="images/package ex2.png" width="100%">
+        <p>In this Example,one package is created with the name pack.
+            In that package a Base class is created.
+            Then that package pack is imported to the main class.
+            By creating an object to the base class,
+            data members and the member function of the base class can be accessed.
+        </p><br>
+        <h6>2.Package with multiple methods:</h6>
+        <img src="images/package ex3.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this Example,one package is created with the name pack.In that package a Base class is created. Then that
+            package pack is imported to the main class.By creating objects
+            To the base class,so we accessing data member and member function of the base class .In this program
+            additionally,in base class three methods are created
+        </p><br>
+        <h6>3.Multiple packages:</h6>
+        <p><b>Case1:</b> multiple packages with same class
+        </p>
+        <img src="images/package ex4.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this Program,Three packages are created Named p1,p2 and p3.Then Importing all Three packages with their
+            respective Base class(i.e, BaseA,BaseB and BaseC).In main class,Creating Objects to the Package
+            Classes(b1,b2 and b3).By using those object ,Operating Data member and Member Functions of those Base class
+            of the Packages.In additionally creating object using packages names(i.e,p1.Base b1) <br>
+            <b>Note : </b>
+            If the classes in these packages are same,thus using fully qualified name (ie.p1.Base)
+        </p><br>
+        <p><b>Case2:</b> multiple packages with different classes
+        </p>
+        <img src="images/package ex5.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this Program,Three packages are created Named p1,p2 and p3.Then
+            Importing all Three packages with their respective Base class(i.e, BaseA,BaseB and BaseC).
+            In main class,Creating Objects to the Package Classes(b1,b2 and b3).By using those object ,
+            Operating Data member and Member Functions of those Base class of the Packages.
+        </p><br>
+        <p><b>Case3:</b>packages with different classes using inheritance(same method())
+        </p>
+        <img src="images/package ex6.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this Program,Three Packages were Created with the same name pack.
+            In main class creating objects to all the Class Base,Derived and C.
+            By using Those objects operating the member functions of the Class(i.e, Base,Derived,C). <br>
+            <b>Note:</b>Derived class is inherited using extends Keyword.
+            It is Derived Class for Base class.So Creating objects to Derived class can Access the Member function of
+            the Base class.
+        </p><br>
+        <p><b>Case4:</b> packages with different classes using inheritance(different method())
+        </p>
+        <img src="images/package ex7.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this Example also Three packages with same name pack are created.In 1st pack we created a Base class,in
+            2nd pack Derived class is created for the Base class using Extends Keyword and in 3rd pack Class C is
+            Created as a Derived class for Derived class.Therefore By Creating Object to Class C can Operate all the
+            Member functions of the Base class and Derived class.
+        </p><br>
+        <p><b>Case5:</b> Packages using constructor (inheritance)
+        </p>
+        <img src="images/package ex8.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this example, three packages called pack were created with classes Base,Derived and C , in all those
+            package classes were created with a Parameterized constructor. Base class is inherited from package 2 using
+            extends keyword(i.e,derived class is derived from base class). Derived class is inherited from package 3
+            using extends keyword(i.e, C class is derived from derived class). Therefore Multilevel inheritance. Then
+            all packages are imported to the main class. Then object c is created to class C. While creating an object
+            to constructor it automatically calls the class. In all these classes a super keyword is used(it points to
+            the immediate Base/super class). So while creating objects for class C we can access the Base class.
+        </p><br>
+        <h4>ACCESS PROTECTION:</h4>
+        <table>
+            <tr>
+                <th>
+                    TYPES
+                </th>
+                <th>PUBLIC</th>
+                <th>PROTECTED</th>
+                <th>PRIVATE</th>
+                <th>NO MODIFIER</th>
+            </tr>
+            <tr>
+                <td>SAME CLASS</td>
+                <td>YES</td>
+                <TD>YES</TD>
+                <td>YES</td>
+                <td>YES</td>
+            </tr>
+            <tr>
+                <td>SAME PACKAGE SUBCLASS</td>
+                <td>YES</td>
+                <td>YES</td>
+                <td>NO</td>
+                <td>YES</td>
+            </tr>
+            <tr>
+                <td>SAME PACKAGE AND NON-SUBCLASS</td>
+                <td>YES</td>
+                <td>YES</td>
+                <td>NO</td>
+                <td>YES</td>
+            </tr>
+            <tr>
+                <td>DIFF. PACKAGE SUBCLASS</td>
+                <td>YES</td>
+                <td>YES</td>
+                <td>NO</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <td>DIFF. PACKAGE
+                    NON-SUBCLASS
+                </td>
+                <td>YES</td>
+                <td>NO</td>
+                <td>NO</td>
+                <td>NO</td>
+            </tr>
+        </table>
+        <br>
+        <h4>TYPE 1:</h4>
+        <img src="images/package ex9.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <P>The above file Base belongs to package p1, and contains data members with all access modifiers. Note that,all
+            the data members within the same class can be accessed.
+        </P>
+        <br>
+        <h4>TYPE 2:</h4>
+        <img src="images/package ex10.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <P>The above file Base belongs to package p1, and contains data members with all access modifiers. Note that,
+            all the data members within the same class can be accessed. And ,the above file Derived belongs to package
+            p1, and extends Base, which belongs to the same package. Note that,private datamember can’t be used outside
+            the class. By ignoring that,<br><b>Output is :</b><br>10 20 30 40 <br>10 <br> 20 <br>30
+        </P>
+        <br>
+        <h4>TYPE 3:</h4>
+        <img src="images/package ex11.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <P>The above file Base belongs to package p1, and contains data members with all access modifiers. Note that,
+            all the data members within the same class can be accessed. And the above file Derived belongs to package
+            p1, and having an instance of Base. by this instance , the implementation of the file Base data members into
+            the Derived could be done. Note that,private datamember can’t be accessible in Derived . By ignoring
+            that,<br><b>Output is :</b><br>10 20 30 40 <br>10 <br> 20 <br>30
+        </P>
+        <br>
+        <h4>TYPE 4:</h4>
+        <img src="images/package ex12.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <P>The above file Base belongs to package p1, and contains data members with all access modifiers. Note that,
+            all the data members within the same class can be accessed. And the above file Derived belongs to package
+            p2. extends Base, which belongs to p1, and it is trying to access data members of the class Base. But, the
+            data members with no-modifier access and private access can’t be accessed. By ignoring that,<br><b>Output is
+                :</b><br>10 20 30 40 <br>10 <br>30
+        </P>
+        <br>
+        <h4>TYPE 5:</h4>
+        <img src="images/package ex13.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <P>The above file Base belongs to package p1, and contains data members with all access modifiers. Note that,
+            all the data members within the same class can be accessed. And the above file Derived belongs to package
+            p2, and having an instance of Base of package p1, trying to access its some data members. Only public access
+            can only be able to access. By ignoring that,<br><b>Output is :</b><br>10 20 30 40 <br>10
+        </P>
+        <br>
+        <h4>APPLICATION TYPE PROGRAMS:</h4><br>
+        <img src="images/pack example image.png" width="50%">
+        <h6>Q1. How will you call m1 of class A of sub-package scien and m2 of class A of sub-package tech from class B
+            of sub-package scien?
+            Let’s create a program using the first approach to call the following requirement.
+        </h6>
+        <img src="images/pack example images2.png" width="100%">
+        <h6>Will the above code compile? </h6>
+        <ul>
+            <li>No: because the statement A a = new A(); does not say anything about class A from which sub-packages
+                (scien or tech) it is referring.</li>
+            <li>No: because the statement A a1 = new A(); is also not saying anything about class A of which
+                sub-packages (scien or tech) it is referring.</li>
+            <li>No: because a.m1() and a1.m2() will get confused to call the method of which package’s class. Here, the
+                compiler will be also confused.</li>
+        </ul>
+        <p>In this case, the import is not working. So, we remove the import statement and use the fully qualified name.
+        </p>
+        <img src="images/pack example images2.png" width="100%">
+        <h6>OUTPUT:</h6>
+        <p>Hi </p>
+        <p>Hello </p>
+        <p>Hello Java</p>
+        <h6>EXPLANATION:</h6>
+        <p>Suppose you are not using public with m2() method in the above program then it will give error ” The method
+            m2() from the type A is not visible” because it is a default and default access modifier cannot be accessed
+            from outside the package.</p>
+        <br>
+        <h6>Q2.Write a program creating three classes to get employee details, calculate employee salary, get company
+            details. Create these classes with different packages. In this, inherent employee details and calculating
+            employee salary class. Get the employee details like name, salary, working hours in a separate method. Get
+            the company details in a separate method. While calculating salary i) addSalary() --> increments salary to
+            500 if the salary is above 5000
+            ii) addWork() --> increments salary to 250 if hours is above 6.
+        </h6>
+        <img src="images/pack realtime 1.png" width="100%">
+        <img src="images/pack realtime 2.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>In this program, Three packages named, Emp, Calc,Comp.in those packages required variables
+            and Constructors are created. Here Super keyword(which call the immediate Base class) is used in
+            All the classes. (Empdetails is Base class for EmpCalculation, EmpCalculation is Base class for Compdetails)
+            Then all packages are imported to main class. Then by creating a object to derived class Compdetials
+            Access the data member and member function of the package classes
+        </p>
+        <br>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show">
+        <center>
+            <b>
+                <h1>FINALLY KEYWORD</h1>
+            </b>
+        </center>
+        <h4>DEFINITION:</h4>
+        <P> The finally keyword is used to create a block of code that follows a try block. A finally block of code
+            contains all the crucial statements which always executes, whether or not an exception has occurred.</P>
+        <br>
+        <h4>SYNTAX:</h4>
+        <pre>        try {
+                //Statements that may cause an exception
+            }
+            catch {
+               //Handling exception
+            }
+            finally {
+               //Statements to be executed
+            }
+            </pre>
+        <br>
+        <h4>NEED:</h4>
+        <p>“finally” block in java can be used to put "cleanup" code such as closing a file, closing connection etc.
+            Putting cleanup code in a finally block is always a good practice, even when no exceptions are anticipated.
+        </p>
+        <br>
+        <h4>USAGE OF FINALLY KEYWORD:</h4>
+        <ul>
+            <li>finally keyword is used to maintain flow of the program.</li>
+            <li>It is used after the try block. Even if an exception is not handled, finally block maintains the flow
+                without interruption of the program.</li>
+        </ul>
+        <br>
+        <img src="images/finally.jpg" width="50%" height="500vpx">
+        <br>
+        <h4>IMPORTANT POINTS TO REMEMBER:</h4>
+        <ul>
+            <li>A finally block must be associated with a try block, you cannot use finally without a try block. You
+                should place those statements in this block that must be executed always.</li>
+            <li>For each try block there can be zero or more catch blocks, but only one finally block.</li>
+            <li>An exception in the finally block, behaves exactly like any other exception.</li>
+        </ul>
+        <br>
+        <h4>WORKING OF FINALLY BLOCK:</h4>
+        <ul>
+            <li>Finally block is optional, as we have seen in previous tutorials that a try-catch block is sufficient
+                for exception handling, however if you place a finally block then it will always run after the execution
+                of try block.</li>
+            <li>In the normal case when there is no exception in the try block then the finally block is executed after
+                the try block. However if an exception occurs then the catch block is executed before the finally block.
+            </li>
+            <li>finally works irrespective of return statements in try-catch block.</li>
+        </ul>
+        <br>
+        <h4>EXAMPLES:</h4>
+        <h6>1.When exception does not occur:</h6>
+        <img src="images/finally ex1.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>As there is no exception, after the try block, catch block is not executed. The control of the program then
+            goes to finally block. <br> finally block is executed after every try block if present.</p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try - finally - statements after the block.</p>
+        <br>
+        <h6>2.When exception occurs and not handled:</h6>
+        <img src="images/finally ex2.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>There is an exception in the try block, catch block should be executed to handle the exception but there is
+            no catch block. So the control of the program then goes to finally block. Statements after try-finally block
+            are not executed, since exception is not handled.</p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try - finally. <br> Error</p>
+        <br>
+        <h6>3.When exception occurs and corresponding catch block matches correctly:</h6>
+        <img src="images/finally ex3.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>There is an exception in the try block, catch block should be executed to handle the exception. There is a
+            catch block which matches with corresponding exception. So catch block is executed. Then finally block is
+            executed. As there is no interruption while running the program, the last statement after try-catch-finally
+            block is executed. </p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try -catch- finally-statements after the block.</p>
+        <br>
+        <h6>4.When exception occurs and catch block mismatched:</h6>
+        <img src="images/finally ex4.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>There is an exception in the try block, catch block should be executed to handle the exception, there is a
+            catch block, but mismatched. So the control of the program then goes to finally block. Statements after
+            try-catch-finally block are not executed, since exception is not handled.
+            <br> This is as same as if there is no catch block.
+        </p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try - finally. <br> Error</p>
+        <br>
+        <h6>5.Exception inside finally block:</h6>
+        <img src="images/finally ex5.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>There is an exception in the try block, catch block should be executed to handle the exception. There is a
+            catch block which matches with corresponding exception. So catch block is executed. Then finally block is
+            executed. As there is no interruption while running the program, the last statement after try-catch-finally
+            block is executed.</p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try - finally - try - catch - statement after the block.
+        </p>
+        <br>
+        <h4>Circumstances where finally block does not execute:
+        </h4>
+        <ul>
+            <li>The death of a Thread</li>
+            <li>Using the System. exit() method.</li>
+            <li>Due to an exception arising in the finally block and not handled properly.</li>
+        </ul>
+        <br>
+        <h4>EXAMPLE:</h4>
+        <h6>System.exit() before finally block: </h6>
+        <img src="images/finally ex6.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>This is a special circumstance where the program is terminated before the statement which causes error.
+            finally block is not executed.</p>
+        <u>
+            <h6>Flow of the program:</h6>
+        </u>
+        <p>try upto System.exit() statement.</p>
+        <br>
+        <h4>Real time usage:</h4>
+        <p>Basically the use of finally block is resource deallocation. Means all the resources such as Network
+            Connections, Database Connections, which we opened in the try block are needed to be closed so that we won’t
+            lose our resources as opened. So those resources are needed to be closed in the finally block.</p>
+        <img src="images/finally ex7.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>The finally block is a key tool for preventing resource leaks. When closing a file or otherwise recovering
+            resources, place the code in a finally block to ensure that resource is always recovered.</p>
+
+        <br>
+        <h4>Difference between final, finalize and finally keyword:</h4>
+        <table>
+            <tr>
+                <th>S.NO</th>
+                <th>FINAL</th>
+                <th>FINALIZE</th>
+                <th>FINALLY</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>
+                    Final is used to apply restrictions on class, method and variable. Final class can't be inherited,
+                    final method can't be overridden and final variable value can't be changed.
+                </td>
+                <td>Finalize is used to perform clean up processing just before the object is garbage collected.</td>
+                <td>Finally is used to place important code, it will be executed whether an exception is handled or not.
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Final is a keyword.</td>
+                <td>Finalize is a method.</td>
+                <td>Finally is a block.</td>
+            </tr>
+        </table>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

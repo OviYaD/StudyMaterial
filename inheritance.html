@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show" class="w3-rest w3-container w3-white">
+
+        <center>
+            <b>
+                <h1>INHERITANCE</h1>
+            </b>
+        </center><br>
+        <h4>NEED OF INHERITANCE: </h4>
+        <ul>
+            <li>Inheritance enables code reusability and saves time. </li>
+            <li> Inheritance is used to declare characteristics of classes inheriting it,without giving its
+                implementation.</li>
+            <li>It is one of the most important concepts of OOPS.</li>
+        </ul><br>
+        <h4>DEFINITION:</h4>
+        <ul>
+            <li>Inheritance can be defined as the process where one class acquires the properties (methods and fields)
+                of another class. </li>
+            <li> The class which inherits the properties of other class is known as subclass. It's also called a derived
+                or child class and the class whose properties are inherited is known as superclass (base or parent
+                class).
+            </li>
+        </ul><br>
+        <h5> The following program is the simple example for <b> Compile time </b> polymorphism:</h5>
+        <img src="images/INHERITANCE EX1.png" width="100%">
+        <br>
+        <h5>The following program is the simple example for <b> Run time </b> polymorphism: </h5>
+        <img src="images/INHERITANCE EX2.png" width="100%">
+        <br>
+        <h4><b> extends</b> KEYWORD:</h4>
+
+        <P> The extends is a Java keyword, which is used in the inheritance process of Java. It specifies the superclass
+            in a class declaration using extends keyword. There are two types:
+        </P>
+        <p>
+        <ul>
+            <li>The class from which another class is derived is called the superclass.</li>
+            <li>The derived class (the class that is derived from another class) is called a subclass.</li>
+        </ul>
+        </p><br>
+        <h4>SYNTAX:</h4>
+        <pre>      class base_class
+            {  
+                .....
+            }
+            class derived_class extends base_class
+            {
+                .....
+            }
+
+        </pre><br>
+        <h4>TYPES OF INHERITANCE: </h4>
+
+        <UL>
+            <LI>Single Level Inheritance</LI>
+            <LI>Multiple Inheritance</LI>
+            <LI>Multi-Level Inheritance</LI>
+            <LI>Hierarchical Inheritance</LI>
+            <LI>Hybrid Inheritance</LI>
+        </UL><br>
+        <h4>SINGLE LEVEL INHERITANCE: </h4>
+        <p>When a class extends another one class then only we call it as single inheritance.
+            The below flow diagram shows that class B extends only one class which is A.
+            Here A is a parent class of B and B would be a child class of A.</p>
+        <center><img src="images/single lvl inheritance.jpg" width="300px 300px"></center>
+        <br>
+        <h4>EXAMPLE 1:</h4>
+        <h6>Accessing the data members of single inheritance</h6>
+        <img src="images/INHERITANCE EX3.png" width="100%"><br><br>
+        <h4>EXAMPLE 2:</h4>
+        <h6>Accessing the member function of a single inheritance</h6>
+        <img src="images/INHERITANCE EX4.png" width="100%"><br>
+        <h6>EXPLANATION:</h6>
+        <p>We Created a Base Class A and Using extends keyword we create a derived class B.
+            By Creating an Object to Class B(child class), We Can access Data member and member function of Class
+            A(Parent class) .
+            Here we access the member function (methodA()) of Class A using Object of Class B. </p>
+        <fieldset>
+            <legend>NOTE:</legend>
+            <ul>
+                <li>We can access data member or member function of the Parent class by
+                    using object created to derived class (Class B) Or Object created to Base class (Class A)</li>
+                <li>We cannot access data member or member function of the derived class (Class B),
+                    Using object of parent class (Derived Class inherited the property of Base Class)</li>
+            </ul>
+        </fieldset><br>
+        <h4>MULTIPLE INHERITANCE: </h4>
+        <ul>
+            <li>Object Oriented Programming provides a user the feature of multiple inheritance,
+                wherein a class can inherit the properties of more than a single parent class.
+                Java doesn’t support multiple inheritance but it can be achieved indirectly through the usage of
+                interfaces.</li>
+            <li>Here the derived class C inherits the features of the base classes A and B through the keyword Interface
+                and Implement.</li>
+        </ul>
+
+        <center><img src="images/multiple inheritance.jpg" width="300px 300px"></center>
+        <br>
+        <h4><b> Interface and Implement</b> KEYWORD:</h4>
+        <ul>
+            <li>The interface keyword is used to declare a special type of class that only contains abstract methods.
+                To access the interface methods, the interface must be "implemented"
+                (kinda like inherited) by another class with the implements keyword (instead of extends ).</li>
+            <li>The implements keyword is used to implement an interface .</li>
+        </ul>
+        <h4>EXAMPLE 1:</h4>
+        <h6>for accessing the data members using the keyword interface and implement:
+        </h6>
+        <img src="images/INHERITANCE EX5.png" width="100%"><br><br>
+        <h4>EXAMPLE 2:</h4>
+        <h6>for accessing the member functions using the keyword interface and implement:
+        </h6>
+        <img src="images/INHERITANCE EX6.png" width="100%"><br>
+        <h6>EXPLANATION:</h6>
+        <p>We have created a base classes (A&B) and derived class C by using a keyword implement.
+            Because using extend keyword will extend only one base class,
+            so that we using interface and implement keyword to extend more than one class.</p>
+        <br>
+        <h4>MULTI-LEVEL INHERITANCE:</h4>
+        <P>In Multilevel Inheritance, a derived class will be inheriting a base class and as well as the derived
+            class also act as the base class to other class. In below diagram, class A serves as a base class for the
+            derived class B,
+            which in turn class B serves as a base class for the derived class C.
+            In Java, a class cannot directly access the grandparent’s members.</P>
+        <center><img src="images/multilevel.jpg" width="300px 300px"></center>
+        <h4>EXAMPLE:</h4>
+        <img src="images/INHERITANCE EX7.png" width="100%">
+        <h6>
+            EXPLANATION:
+        </h6>
+        <P>Here a derived class will be inheriting a base class and as well as the derived class also act as the base
+            class to other class.
+            In above,when we call a method obj.methodX(),first the control goes to class C which extends class B,
+            on turn it extends class A...so the function get executed.</P>
+        <br>
+        <H4>HIERARCHICAL INHERITANCE: </H4>
+        <P> When a class has more than one child classes (sub classes) or in other words more than one child classes
+            have
+            the same parent class then this type of inheritance is known as hierarchical inheritance.</P>
+        <center><img src="images/hierarchical.jpg" width="300px 300px"></center>
+        <h4>EXAMPLE:</h4>
+        <img src="images/INHERITANCE EX8.png">
+        <h6>EXPLANATION:</h6>
+        <p>Here all derived classes belong to (i.e extends) the same base class,
+            so that All classes can access the method of class A.</p>
+        <br>
+        <h4>HYBRID INHERITANCE:</h4>
+        <p>Hybrid Inheritance is a combination of two types of inheritances.So,
+            for this we taking hierarchical Inheritance and Multiple Inheritance.
+            Since in Java Multiple Inheritance is not supported directly we
+            can achieve Hybrid inheritance also through Interfaces only.</p>
+        <center><img src="images/hybrid.jpg" width="300px 300px"></center>
+        <p>As we can see in the above diagram ClassA is the Parent for both ClassB and ClassC which is hierarchical
+            Inheritance and again
+            ClassB and ClassC again act as Parent for ClassC(Multiple Inheritance which is not supported by Java).</p>
+        <h4>EXAMPLE 1:</h4>
+        <h6>Accessing the data members of hybrid inheritance:</h6>
+        <img src="images/INHERITANCE EX9.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <ul>
+            <li>In this program,<p>
+                    -interface B & C extends interface A --- Hierarchical inheritance </p>
+                <p> -class D implements interface B, C --- Multiple inheritance</p>
+            </li>
+        </ul><br>
+        <h4>EXAMPLE 2:</h4>
+        <h6>Accessing the member functions of hybrid inheritance:</h6>
+        <img src="images/INHERITANCE EX10.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <ul>
+            <li>In this program,<p>
+                    -interface B & C extends interface A --- Hierarchical inheritance </p>
+                <p> -class D implements interface B, C --- Multiple inheritance</p>
+            </li>
+        </ul><br><br>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

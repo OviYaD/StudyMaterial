@@ -1,0 +1,215 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show" class="w3-rest w3-container w3-white">
+
+        <center>
+            <b>
+                <h1>THIS KEYWORD:</h1>
+            </b>
+        </center><br>
+
+        <h4>DEFINITION: </h4>
+
+        <p> The this keyword refers to the current object in a method or constructor
+        </p><br>
+        <h4>NEED FOR THIS KEYWORD: </h4>
+        <P>This keyword is used to resolve ambiguity between the instance variables
+            and parameters. The most common use of this keyword is to eliminate the
+            confusion between class attributes and parameters with the same name
+            (because a class attribute is shadowed by a method or constructor
+            parameter).
+        </P><br>
+        <h4>Sample program without this keyword:
+        </h4>
+        <img src="images/this ex1.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>The Base class constructor has the same instance variable name and
+            parameter argument name. So a confusion occurs. Thus output is the default
+            value.</p>
+        <br>
+        <h4>USAGE OF THIS KEYWORD:</h4>
+        <ul>
+            <li>this can be used to refer to a current class instance variable.</li>
+            <li>this can be used to invoke current class method (implicitly)</li>
+            <li>this() can be used to invoke the current class constructor.</li>
+            <li> this can be passed as an argument in the method call.
+            </li>
+            <li>this can be passed as an argument in the constructor call.
+            </li>
+            <li> this can be used to return the current class instance from the
+                method.
+            </li>
+        </ul>
+        <br>
+        <h4>THIS KEYWORD USED AS:</h4>
+        <h5><u>1. Refer current class instance variable:
+            </u>
+        </h5>
+        <img src="images/this ex2.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>The Student class constructor has the same instance variable name and
+            parameter argument name. If this keyword is omitted the output will be 0 null 0.0
+            (as above), because of confusion between class attribute and parameter (having
+            same name). To avoid the confusion this keyword is used.</p>
+        <br>
+        <h5><u>2. Invoke current class method:</u>
+        </h5>
+        <img src="images/this ex3.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>Current class method can be invoked with or without using this keyword.
+        <pre style="margin-left:0px ; background-color: gray;" >
+     this . m ();
+            m ();
+            </pre>
+        Both these methods are the same. It invokes the current class(class Base)
+        method(m())..
+        </p>
+        <br>
+        <h5><u>3. Invoke current class constructor:</u>
+        </h5>
+        <img src="images/this ex4.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>As the object is created with a parameter, parameterized constructor starts
+            executing. In the first line of the parameterized constructor this() is used which
+            calls the current class constructor. As there is no parameter inside this(), a non
+            parameterized constructor is called and executed(which displays hello a as
+            output in the above example).
+        <ul>
+            <li> Parameterized constructor can also be called by using this keyword.(Refer
+                last example).</li>
+        </ul>
+
+        </p><br>
+        <h5><u>4. Pass as an argument in method call:
+            </u>
+        </h5>
+        <img src="images/throws ex5.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>Parameter of the function m() is an object. Inside the function p() this is
+            passed which passes the current object. Thus this keyword is used to pass
+            current class object as an argument to a method. It can access the members of
+            the class. In this example, int x is accessed after passing it as an object using
+            this keyword.
+        </p>
+        <br>
+        <h5><u>5. Pass as an argument to constructor call:
+            </u>
+        </h5>
+        <img src="images/this ex6.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>Inside the constructor B() an object is created for class A in which object is
+            passed as an argument to the constructor of class. The constructor of class A
+            accesses object B as it is passed as argument.
+        </p>
+        <br>
+        <h5><u>6. Return current class instance:
+            </u>
+        </h5>
+        <img src="images/this ex7.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>Constructor of class A returns the instance object, thus creating an object
+            for class A is not required.
+        </p>
+        <br>
+        <h4>REAL-TIME EXAMPLE:</h4>
+        <img src="images/this ex8.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>this keyword is used to reuse constructor from constructor. It maintains the
+            constructor chain.
+        </p>
+        <br>
+        <h4>IMPORTANT POINTS TO REMEMBER:</h4>
+        <ol>
+            <li> It is a better approach to use meaningful names for variables. So we
+                use the same name for instance variables and parameters in real
+                time, and always use this keyword.
+            </li>
+            <li>
+                Call to this() must be the first statement in constructor
+            </li>
+        </ol>
+        <br>
+        <img src="images/this ex9.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>As per rule this() should be called as the first statement, or else it will be an
+            error.
+        </p><br>
+        <h5>To Avoid this error:</h5>
+        <p>this() is called as first statement
+        </p>
+        <img src="images/this ex10.jpeg" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>When an object is created it calls a non-parameterized constructor. Which
+            calls a parameterized constructor passing 25 as value.
+        </p><br>
+    </div>
+</body>
+
+</html>

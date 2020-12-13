@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+        OOPS| Study Material
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="w3-container w3-teal" style="position: fixed; width: 100%;margin-top: 0px;">
+        <center>
+            <h1>OOPS Study Material</h1>
+        </center>
+    </div><br><br><br>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3><b>MENU</b></h3>
+        <a href="constructor.html" target="_self" class="w3-bar-item w3-button w3-mobile">CONSTRUCTOR</a>
+        <a href="argumentpassing.html" target="_self" class="w3-bar-item w3-button w3-mobile">ARGUMENT PASSING</a>
+        <a href="method overloading.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERLOADING</a>
+        <a href="inheritance.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INHERITANCE</a>
+        <a href="super keyword.html" style="background-color: teal; color: white;"
+            target="_self" class="w3-bar-item w3-button w3-mobile">SUPER KEYWORD</a>
+        <a href="this keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THIS KEYWORD</a>
+        <a href="abstract and final keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">ABSTRACT CLASS AND FINAL KEYWORD</a>
+        <a href="packages.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">PACKAGES</a>
+        <a href="method overriding.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">METHOD OVERRIDING</a>
+        <a href="interface.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">INTERFACES</a>
+        <a href="exception handling.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">EXCEPTION HANDLING-MULTIPLE CATCH-NESTED TRY</a>
+        <a href="BUILT-IN  USER DEFINED  AND  CHAINED EXCEPTIONS.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">BUILT-IN USER DEFINED CHAINED EXCEPTIONS</a>
+        <a href="throws keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROWS KEYWORD</a>
+        <a href="throw keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">THROW KEYWORD</a>
+        <a href="finally keyword.html"
+            target="_self" class="w3-bar-item w3-button w3-mobile">FINALLY KEYWORD</a>
+        <br><br>
+        <!--<a href="workout_examples/index.html" class="w3-bar-item w3-button">Workout Examples</a>-->
+    </div>
+    <!--div class="w3-bar w3-black" style="position: fixed; width: 75%;margin-left:25%;">
+        <a href="basichtml/index.html" class="w3-bar-item w3-button w3-mobile">Basic HTML Tags</a>
+        <a href="Basic input tags/index.html" class="w3-bar-item w3-button w3-mobile">Input Tag</a>
+        <a href="page structured element/index.html" class="w3-bar-item w3-button">Page Structured Elements</a>
+        <a href="css/index.html" class="w3-bar-item w3-button w3-mobile">CSS</a>
+        <a href="array/index.html" class="w3-bar-item w3-button w3-mobile">Array</a>
+        <a href="function/index.html" class="w3-bar-item w3-button w3-mobile">Function</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="Control Statements/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements I</a>
+        <a href="control statement-II/index.html" class="w3-bar-item w3-button w3-mobile">Control Statements II</a>
+    </div><br-->
+    <div id="show" class="w3-rest w3-container w3-white">
+
+        <center>
+            <b>
+                <h1>SUPER KEYWORD:</h1>
+            </b>
+        </center><br>
+
+        <h4>DEFINITION: </h4>
+
+        <p> The super keyword in Java is a reference variable which is used for
+            referring to an immediate parent class object.
+        </p><br>
+        <h4>NEED FOR SUPER KEYWORD: </h4>
+        <P>The most common use of the super keyword is to eliminate the confusion
+            between superclasses and subclasses that have methods with the same
+            name.
+        </P><br>
+        <h4>USAGE OF SUPER KEYWORD:</h4>
+
+
+        <ul>
+            <li>super can be used to refer to the immediate parent class
+                instance variable.</li>
+            <li>super can be used to invoke immediate parent class method.</li>
+            <li>super can be used to invoke immediate parent class
+                constructor.</li>
+        </ul>
+        <br>
+        <h4>SUPER KEYWORD USED AS:</h4>
+        <h5><u>1. Parent class variable:</u>
+        </h5>
+        <img src="images/super ex1.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>super.color accesses the parent class color variable</p>
+        <br>
+        <h5><u>2. Parent class method:</u>
+        </h5>
+        <img src="images/super ex2.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>super.eat() accesses the parent class eat method.
+        </p>
+        <br>
+        <h5><u>3. Parent class constructor:</u>
+        </h5>
+        <img src="images/super ex3.png" width="100%">
+        <h6>EXPLANATION:</h6>
+        <p>super() accesses the parent class constructor.
+        </p>
+        <br>
+        <h4>IMPORTANT POINTS TO REMEMBER:</h4>
+        <ol>
+            <li> Call to super() must be the first statement in the derived class
+                constructor.</li>
+            <li>
+                If a constructor does not explicitly invoke a superclass
+                constructor, the Java compiler automatically inserts a call to the
+                no-argument constructor of the superclass. If the superclass
+                does not have a no-argument constructor, you will get a
+                compile-time error.
+            </li>
+            <li>If a subclass constructor invokes a constructor of its superclass,
+                either explicitly or implicitly, you might think that a whole chain of
+                constructors called, all the way back to the constructor of Object.
+                This, in fact, is the case. It is called constructor chaining ..
+            </li>
+        </ol>
+        <br>
+        <h4>REAL-TIME EXAMPLE:</h4>
+        <img src="images/super ex4.png" width="100%"><br>
+        <h4>DIFFERENCE BETWEEN super AND this KEYWORD: </h4><br>
+
+        <table class="w3-row-padding">
+            <tr>
+                <th></th>
+                <th>CONSTRUCTOR</th>
+                <th>METHOD</th>
+            </tr>
+            <tr>
+                <td>DEFINITION</td>
+                <td>
+                    super() - refers to an immediate
+parent class instance.
+
+                </td>
+                <td>
+                    this() - refers to the current
+class instance.
+                </td>
+            </tr>
+            <tr>
+                <td>INVOKE</td>
+                <td>Can be used to invoke immediate
+                    parent class method.</td>
+                <td>
+                    Can be used to invoke
+current class method.
+                </td>
+            </tr>
+            <tr>
+                <td>CONSTRUCTOR</td>
+                <td>
+                    super() acts as immediate parent
+class constructor and should be
+first line in child class constructor.
+                </td>
+                <td>
+                    this() acts as a current class
+constructor and can be used
+in parameterized
+constructors.
+                </td>
+            </tr>
+            <tr>
+                <td>OVERRIDE</td>
+                <td>
+                    When invoking a superclass
+                    version of an overridden method
+                    the super keyword is used.
+                </td>
+                <td>When invoking a current
+                    version of an overridden
+                    method the this keyword is
+                    used.
+                </td>
+            </tr>
+        </table><br>
+        <h5><b>Practice problems:</b></h5>
+        <a href="https://www.hackerrank.com/challenges/java-method-overriding-2-super-keyword/problem">Hackerrank:Method Overriding</a>
+        <br>
+    </div>
+
+
+
+</body>
+
+</html>
