@@ -145,12 +145,14 @@
         <p>Exception is handled by using throws keyword. But there is no exception. The program runs normally.</p>
         <br>
         <u>
-            <p>4.Exception is declared but exception not occurred:</p>
+            <p>4.Exception is declared and exception occurred:</p>
         </u>
-        <img src="images/throws ex4" width="100%">
+        <img src="images/throws ex4.png" width="100%">
         <h6>Explanation:</h6>
-        <p>IO Exception occurs in the program. But the program does not terminate abnormally because throws keyword is
-            used to handle the exception.</p>
+        <p>throws keyword can’t handle the unchecked exceptions. When the exception is thrown by throw keyword and there
+            is no catch statement to handle the exception. So, the unchecked exception causes Runtime Exception(which is
+            thrown by the throw keyword) which results in abnormal termination of the program.
+        </p>
         <br>
         <u>
             <p>5.Propagation of checked exception:</p>
